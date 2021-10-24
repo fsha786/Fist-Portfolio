@@ -1,0 +1,603 @@
+/*-----------------FONTS-----------------*/
+
+@font-face {
+  font-family: Mark Pro;
+  src: url(../Assets/Fonts/MarkPro.ttf) format("truetype"),
+    url(../Assets/Fonts/MarkProBold.ttf) format("truetype"),
+    url(../Assets/Fonts/MarkProHeavy.ttf) format("truetype"),
+    url(../Assets/Fonts/MarkProMedium.ttf) format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300&display=swap");
+
+/*---------x-------FONTS-------*---------*/
+
+/*-----------------GLOBAL-----------------*/
+
+* {
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: Mark Pro;
+  border-radius: 0;
+  background-color:#fdfffc;
+}
+
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  flex-wrap:nowrap;
+}
+
+.profile-pic {
+  display: flex;
+}
+
+.wrapper {
+  width: 590px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 589px) {
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .wrapper {
+    width: auto;
+  }
+
+}
+.float-container {
+  
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+/*---------x--------------------------x------*/
+
+/*-----------------NAV---------------------*/
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLogo {
+  font-family: Mark Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.navwrapper {
+  display: flex;
+}
+
+.navDivider {
+  width: 2px;
+  height: 20px;
+  background: #a9a9a9;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.navlinks {
+  text-decoration: none;
+  color: #a9a9a9;
+  font-size: 18px;
+  font-family: Mark Pro;
+  font-style: normal;
+  display: block;
+  transition: all 0.4s ease-in-out;
+}
+
+.navlinks:hover {
+  color: black;
+  transform: translateY(-5px);
+}
+
+.n3 {
+  display: none;
+}
+
+@media screen and (max-width: 589px) {
+  .navlinks {
+    transition: none;
+    font-size: 16px;
+  }
+
+  .navlinks:hover {
+    transform: none;
+    color: #a9a9a9;
+  }
+
+  .heroImageClass {
+    width: 100%;
+  }
+}
+
+/*----------x-------NAV-------------x--------*/
+
+/*-----------------ABOUT ME---------------------*/
+
+.sub-heading {
+  font-family: Mark Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.para {
+  color: #626161;
+  font-family: Mark Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+/*---------x--------ABOUT ME------------x---------*/
+
+/*-----------------WORK---------------------*/
+.float-container {
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+.projectMain {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.projectImageHolder {
+  height: 200px;
+  border-radius: 5px;
+
+  margin-bottom: 10px;
+}
+
+.projectLinks {
+  text-decoration: none;
+  font-family: Mark Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: black;
+}
+
+.projectLinks:hover{
+  color: #001233;
+  font-weight: 600;
+}
+
+.project-type{
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 5px;
+  color: white;
+  background-color: #F91C5E;
+  width: fit-content;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+.vd{
+  background-color: #0587FF;
+}
+
+@media screen and (max-width: 589px) {
+  .projectImages {
+    width: 100%;
+    height: auto;
+  }
+
+  .projectImageHolder {
+    height: auto;
+  }
+}
+
+
+
+/*-------x----------WORK-------------x--------*/
+
+/*-----------------SKILLS--------------------*/
+
+.skillsHoldingDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.singleSkillDiv {
+  display: flex;
+  margin-top: 15px;
+}
+
+.singleSkillDiv > p {
+  margin-left: 10px;
+  font-family: Mark Pro;
+  font-style: normal;
+}
+
+.singleSkillDiv > svg > path {
+  fill: #a9a9a9;
+}
+
+@media screen and (max-width: 589px) {
+  .skillsHoldingDiv {
+    display: block;
+  }
+
+  .softwareSkills {
+    margin-top: 50px;
+  }
+}
+
+/*----------x-------SKILLS----------x----------*/
+
+@keyframes shake {
+	25% {
+		transform: rotate(calc(var(--angle) * -1));
+	}
+
+	50% {
+		transform: rotate(var(--angle));
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+body {
+	font: 100 1.3em sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 0 5rem;
+}
+
+h1 {
+	font-weight: 100;
+}
+
+
+.hover07 figure img{
+  -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover07 figure:hover img{
+  -webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+.display {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	gap: 0.1em;
+}
+
+.HOVER {
+	--width: 100%;
+	--time: 0.7s;
+
+	position: relative;
+	display: inline-block;
+	height: 1em;
+	padding: 1em;
+
+	background-color: #000;
+	background: #222;
+	overflow: hidden;
+}
+
+.HOVER text {
+	position: relative;
+	z-index: 5;
+	
+	transition: color var(--time);
+}
+
+.HOVER:hover text {
+	color: #222;
+}
+
+.HOVER span {
+	position: absolute;
+	display: block;
+	content: "";
+	z-index: 0;
+	width: 0;
+	height: 0;
+	
+	border-radius: 100%;
+
+	
+	transform: translate(-50%, -50%);
+	transition: width var(--time), padding-top var(--time);
+}
+
+.HOVER:hover span {
+	width: calc(var(--width) * 2.25);
+	padding-top: calc(var(--width) * 2.25);
+}
+
+.HOVER.FLASH:hover text {
+	color: white;
+}
+
+.HOVER.FLASH span {
+	background: #ff3b3b;
+}
+
+.animated {
+	--angle: 5deg;
+	animation: shake 0.3s;
+}
+
+.link{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	
+	font-size: 1rem;
+}
+
+
+body {
+  font-family: Mark Pro;
+  
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  width:300px;height:300px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(-180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width:400px;height:400px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flip-card-front {
+  background-color: rgb(95, 93, 93);
+  color: black;
+  width:400px;height:400px;
+  
+}
+
+.flip-card-back {
+  
+  color: white;
+  transform: rotateY(180deg);
+  color: #000;}
+
+ 
+  
+
+/*------------------CONTACT--------------------*/
+.float-container {
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+.socialLinks {
+  transition: 0.3s ease-in-out;
+  display: block;
+}
+
+.socialLinks:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+
+/*TWITTER*/
+
+.sl-twitter svg path {
+  transition: 0.4s ease-in-out;
+}
+.sl-twitter:hover svg path {
+  fill: #2daae1;
+}
+
+/*LINKEDIN*/
+.sl-linkedin svg path {
+  transition: 0.3s ease-in-out;
+}
+.sl-linkedin:hover svg path {
+  fill: #3276b0;
+}
+
+/*INSTAGRAM*/
+.sl-instagram svg path {
+  transition: 0.3s ease-in-out;
+}
+.sl-instagram:hover svg path {
+  fill: #99582a;
+}
+
+/*Facebook*/
+.Facebook svg path {
+  transition: 0.6s ease-in-out;
+}
+
+.Facebook:hover svg path {
+  fill: #205bf6;
+} 
+
+/*DRIBBBLE*/
+.sl-dribbble svg path {
+  transition: 0.3s ease-in-out;
+}
+.sl-dribbble:hover svg path {
+  fill: #ed6598;
+}
+
+/*GITHUB*/
+.sl-github svg path {
+  transition: 0.3s ease-in-out;
+}
+.sl-github:hover svg path {
+  fill: #023047;
+}
+
+.socialMediaIcons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  margin-bottom: 50px;
+}
+
+.button-holding-div {
+  display: flex;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.button-holding-div:hover {
+  transform: translateY(-5px);
+}
+
+.button-outlined-div {
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+.button-outlined {
+  border: 1px solid #a9a9a9;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: all 0.6s ease-in-out;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Mark Pro;
+
+  color: #a9a9a9;
+  font-size: 24px;
+}
+
+.button-outlined:hover {
+  background-color: #a9a9a9;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 589px) {
+  .button-outlined {
+    font-size: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .socialLinks {
+    transform: scale(0.8);
+  }
+}
+/*----------x---------CONTACT---------x------------*/
+
+/*------------------FOOTER-------------------*/
+.float-container {
+  padding: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+footer {
+  margin-bottom: 100px;
+}
+
+.footerInfo {
+  background: linear-gradient(180deg, #fccfde 0%, #ff0057 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+
+
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerdivider {
+  height: 2px;
+  background: #a9a9a9;
+  margin-bottom: 30px;
+}
+.float-container {
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.master{
+ display: flex;
+ flex-direction: row-reverse;
+ justify-content: center;
+}
